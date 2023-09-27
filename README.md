@@ -17,8 +17,8 @@ This is a port of the [tiktoken-php](https://github.com/yethee/tiktoken-php).
 use CxRxExO\Tiktoken\EncoderProvider;
 
 $provider = new EncoderProvider();
-
-$encoder = $provider->getForModel('gpt-3.5-turbo-0301');
+$provider->setVocabCache(dirname(__DIR__) . '/.cache/vocab');
+$encoder = $provider->getForModel('gpt-3.5-turbo');
 $tokens = $encoder->encode('Hello world!');
 print_r($tokens);
 // OUT: [9906, 1917, 0]
