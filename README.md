@@ -8,7 +8,7 @@ This is a port of the [tiktoken-php](https://github.com/yethee/tiktoken-php).
 
 ## Installation
 
-<del>$ composer require cxrxexo/tiktoken</del>
+<del>$ composer require cxrxexo/tiktoken</del> DIY
 
 ## Usage
 
